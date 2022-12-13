@@ -7,11 +7,12 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "bumpp --commit --push --tag && pnpm publish"
   },
   "author": "kkopite",
   "license": "ISC",
   "dependencies": {
+    "bumpp": "^8.2.1",
     "chalk": "^3.0.0",
     "commander": "^4.0.1",
     "download-git-repo": "^3.0.2",
