@@ -1,6 +1,6 @@
 {
   "name": "corelink-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "corelink miot cli",
   "main": "index.js",
   "directories": {
