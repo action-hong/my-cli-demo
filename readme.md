@@ -59,22 +59,6 @@ crl init <项目名称>
 
 ## 注意
 
-### 关于隐私协议相关的
-
-- 模板项目中, 默认引入了中英文的隐私, 用户协议, 可见`i18/zh.js`, `i18n/en.js`, 新项目只需替换好`resource/raw`下的相关文件, 如若需要其他语言的隐私协议, 可按照`zh.js`的写法引入相应文件
-- 已经处理好撤销授权后, 自动退出插件
-- 已经处理好首次进入插件弹出授权提示及通用界面内引入隐私政策(参加`i18/zh.js`, `i18n/en.js`的内容)
-```js
-// zh.js
-export default {
-  agreement: require('../resources/raw/agreement-zh.html'), // 用户协议
-  privacy: require('../resources/raw/privacy-zh.html'), // 隐私政策
-  hello: '你好'
-}
-```
-
-这里要注意的是, 项目组引用隐私的地方都是按`agreement`, `privacy` 这两个key来引用的, 所有不要去删除或修改
-
 ### 关于语言适配
 
 ```jsx
@@ -137,7 +121,7 @@ import Text from 'root/component/AppText'
 function Hello() {
   // 使用方法的React native提供的Text组件一样
   return (<Text>hello world</Text>)
-
+}
 ...
 ```
 
